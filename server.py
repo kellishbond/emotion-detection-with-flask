@@ -42,6 +42,7 @@ def emotion_detector(text):
         emotions = data['emotionPredictions'][0]['emotion']
         dominant_emotion = max(emotions, key=emotions.get)
 
+
         formatted_result = {
             'anger': emotions.get('anger', 0),
             'disgust': emotions.get('disgust', 0),
